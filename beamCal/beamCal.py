@@ -101,7 +101,7 @@ class BeamCal:
 		self.plotSample				= False
 		self.beamProfile			= "gauss" #"flat" # "cos2"
 		self.logfile				= None
-		# self.loglevel				= DEBUG
+		self.loglevel				= None#DEBUG
 
 		#imports based on options
 		if self.plotSample:
@@ -163,12 +163,12 @@ class BeamCal:
 	def getLogfile(self):
 		return self.logfile
 
-	# def setLogLevel(self, level):
-	# 	print("[Loglevel] %s --> %s" % (self.loglevel, level))
-	# 	self.loglevel = level
-	#
-	# def getLogLevel(self):
-	# 	return self.loglevel
+	def setLogLevel(self, level):
+		print("[Loglevel] %s --> %s" % (self.loglevel, level))
+	 	self.loglevel = level
+	
+	def getLogLevel(self):
+	 	return self.loglevel
 
 	def setBeamProfile(self, nbeamProfile):
 		print("[Beam Profile] %s --> %s" % (self.beamProfile,nbeamProfile))
