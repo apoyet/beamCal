@@ -163,12 +163,12 @@ class BeamCal:
 	def getLogfile(self):
 		return self.logfile
 
-	def setLogLevel(self, level):
-		print("[Loglevel] %s --> %s" % (self.loglevel, level))
-	 	self.loglevel = level
+	#def setLogLevel(self, level):
+	#	print("[Loglevel] %s --> %s" % (self.loglevel, level))
+	#	self.loglevel = level
 	
-	def getLogLevel(self):
-	 	return self.loglevel
+	#def getLogLevel(self):
+	# 	return self.loglevel
 
 	def setBeamProfile(self, nbeamProfile):
 		print("[Beam Profile] %s --> %s" % (self.beamProfile,nbeamProfile))
