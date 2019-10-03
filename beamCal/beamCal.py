@@ -199,6 +199,8 @@ class BeamCal:
 		print("[Nrj0] %s --> %s (gamma: %s --> %s)" % (self.Nrj0,nNrj0, self.gamma0, nNrj0/self.Mproton))
 		self.Nrj0 = nNrj0
 		self.gamma0 = nNrj0/self.Mproton
+		self.emitX0 = 2.5e-06/self.gamma0
+		self.emitY0 = 2.5e-06/self.gamma0
 
 	def getNrj0(self):
 		return self.Nrj0
